@@ -1,12 +1,13 @@
 function forEach(iterable, callback) {
-  if(Array.isArray(iterable)) {
-    for (let i=0, l = iterable.length; i < l; i++) {
+  if (Array.isArray(iterable)) {
+    for (let i = 0, l = iterable.length; i < l; i++) {
       const element = iterable[i];
       callback(element, i, iterable);
     }
   } else if (typeof iterable === 'object') {
     for (const key in iterable) {
-      callback(value, key, iterable)
+      const value = iterable[key];
+      callback(value, key, iterable);
     }
   }
 }
