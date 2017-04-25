@@ -43,6 +43,7 @@ describe('index', () => {
         forEach(object, spy)
 
         expect(spy).to.have.been.called.exactly(2);
+        
       })
     })
   })
