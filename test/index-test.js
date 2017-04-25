@@ -21,7 +21,8 @@ describe('index', () => {
 
         forEach(array, () => {})
 
-        expect(isArray).to.have.been.called
+        expect(isArray).to.have.been.called;
+
       })
 
       it('calls `callback` on each element of the array', () => {
@@ -30,7 +31,7 @@ describe('index', () => {
 
         forEach(array, spy)
 
-        expect(spy).to.have.been.called.exactly(3)
+        expect(spy).to.have.been.called.exactly(3);
       })
     })
 
@@ -41,7 +42,8 @@ describe('index', () => {
 
         forEach(object, spy)
 
-        expect(spy).to.have.been.called.exactly(2)
+        expect(spy).to.have.been.called.exactly(2);
+        
       })
     })
   })
